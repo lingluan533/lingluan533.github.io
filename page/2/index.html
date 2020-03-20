@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703646">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1584701994112">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -47,7 +47,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>26</div>
+        <div><span>文章</span>24</div>
         <div><span>标签</span>0</div>
         <div><span>分类</span>0</div>
     </div>
@@ -105,7 +105,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a></li></ul>
     </div>
   </div>
 
@@ -122,181 +122,6 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts">
-    
-    <div class="nexmoe-post">
-        <a href="/2018/02/14/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E7%93%B7%E7%A0%96%E9%93%BA%E6%94%BE%20%20%20%E3%80%90%E9%80%92%E5%BD%92%E3%80%91java/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
-                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="算法训练 瓷砖铺放   【递归】java" class="lazyload">
-                    <h1>算法训练 瓷砖铺放   【递归】java</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月14日</a>
-            <a><i class="nexmoefont icon-areachart"></i>444 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
-        </div>
-
-        <article>
-            
-                <p>算法训练 瓷砖铺放</p>
-<p>时间限制：1.0s 内存限制：512.0MB</p>
-<p>锦囊1</p>
-<p>锦囊2</p>
-<p>锦囊3</p>
-<p>问题描述</p>
-<p>有一长度为N(1&lt;=Ｎ&lt;=10)的地板，给定两种不同瓷砖：一种长度为1，另一种长度为2，数目不限。要将这个长度为N的地板铺满，一共有多少种不同的铺法？<br>例如，长度为4的地面一共有如下5种铺法：<br>4=1+1+1+1<br>4=2+1+1<br>4=1+2+1<br>4=1+1+2<br>4=2+2<br>编程用递归的方法求解上述问题。</p>
-<p>输入格式</p>
-<p>只有一个数N，代表地板的长度</p>
-<p>输出格式</p>
-<p>输出一个数，代表所有不同的瓷砖铺放方法的总数</p>
-<p>样例输入</p>
-<pre><code>4</code></pre><p>样例输出</p>
-<pre><code>5</code></pre><p>思路分析：</p>
-<p>一开始这个题我想用递归去往一个数组中添加一和二，看是否在某一个时刻，数组内的和为N。这个思路并没有做出来。</p>
-<p>参考了网上的代码，发现自己真的很菜。。。<br>由于这个题不需要输出组成的序列，只输出总的数目即可，所以每次递归是的变量加一或者加二，然后根据回溯法的思想，如果加上一小于等于N则调用pudiban(val+1),如果加上二小于等于N则调用pudiban(val+2),实际上不用判断val是否会超出N,因为在调用这一层函数的时候已经判断过了。</p>
-<p>代码：</p>
-<pre><code>import java.util.Scanner;
-
-public class Main瓷砖铺法 {
-    static Scanner scan = new Scanner(System.in);
-    static int N;
-
-    static int count = 0;
-
-    public static void main(String[] args) {
-        N = scan.nextInt();
-        pudiban(0);
-        System.out.println(count);
-    }
-
-    private static void pudiban(int val) {
-        if (val == N) {
-            count++;
-            return;
-        }
-
-        if (val + 1 &lt;= N) {
-            pudiban(val + 1);
-        }
-        if (val + 2 &lt;= N) {
-            pudiban(val + 2);
-        }
-    }
-
-}</code></pre>
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2018/02/13/UVA129%20Krypton%20Factor%20%E5%9B%B0%E9%9A%BE%E7%9A%84%E4%B8%B2%20dfs%E5%9B%9E%E6%BA%AF%E3%80%90DFS%E3%80%91/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
-                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="UVA129 Krypton Factor 困难的串 dfs回溯【DFS】" class="lazyload">
-                    <h1>UVA129 Krypton Factor 困难的串 dfs回溯【DFS】</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>1.1k 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 5 分钟</a>
-        </div>
-
-        <article>
-            
-                <p>﻿﻿</p>
-<p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1627" target="_blank" rel="noopener"> Krypton Factor  
-</a></p>
-<p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1627" target="_blank" rel="noopener"> </a> ** <strong>Time Limit: 2000/1000<br>MS (Java/Others) Memory Limit: 65536/32768 K (Java/Others)</strong> **</p>
-<p>** <strong>Total Submission(s): 392 Accepted Submission(s): 174</strong> **  </p>
-<p>Problem Description</p>
-<p>You have been employed by the organisers of a Super Krypton Factor Contest in<br>which contestants have very high mental and physical abilities. In one section<br>of the contest the contestants are tested on their ability to recall a<br>sequenace of characters which has been read to them by the Quiz Master. Many<br>of the contestants are very good at recognising patterns. Therefore, in order<br>to add some difficulty to this test, the organisers have decided that<br>sequences containing certain types of repeated subsequences should not be<br>used. However, they do not wish to remove all subsequences that are repeated,<br>since in that case no single character could be repeated. This in itself would<br>make the problem too easy for the contestants. Instead it is decided to<br>eliminate all sequences containing an occurrence of two adjoining identical<br>subsequences. Sequences containing such an occurrence will be called <code>easy&#39;&#39;.
-Other sequences will be called</code>hard’’.  </p>
-<p>For example, the sequence ABACBCBAD is easy, since it contains an adjoining<br>repetition of the subsequence CB. Other examples of easy sequences are:  </p>
-<p>BB<br>ABCDACABCAB<br>ABCDABCD  </p>
-<p>Some examples of hard sequences are:  </p>
-<p>D<br>DC<br>ABDAB<br>CBABCBA  </p>
-<p>Input</p>
-<p>In order to provide the Quiz Master with a potentially unlimited source of<br>questions you are asked to write a program that will read input lines that<br>contain integers n and L (in that order), where n &gt; 0 and L is in the range ,<br>and for each input line prints out the nth hard sequence (composed of letters<br>drawn from the first L letters in the alphabet), in increasing alphabetical<br>order (alphabetical ordering here corresponds to the normal ordering<br>encountered in a dictionary), followed (on the next line) by the length of<br>that sequence. The first sequence in this ordering is A. You may assume that<br>for given n and L there do exist at least n hard sequences.  </p>
-<p>For example, with L = 3, the first 7 hard sequences are:  </p>
-<p>A<br>AB<br>ABA<br>ABAC<br>ABACA<br>ABACAB<br>ABACABA<br>As each sequence is potentially very long, split it into groups of four (4)<br>characters separated by a space. If there are more than 16 such groups, please<br>start a new line for the 17th group.  </p>
-<p>Therefore, if the integers 7 and 3 appear on an input line, the output lines<br>produced should be  </p>
-<p>ABAC ABA<br>7<br>Input is terminated by a line containing two zeroes. Your program may assume a<br>maximum sequence length of 80.  </p>
-<p>Sample Input</p>
-<p>30 30 0</p>
-<p>Sample Output</p>
-<p>ABAC ABCA CBAB CABA CABC ACBA CABA28</p>
-<p>Source</p>
-<p><a href="http://acm.hdu.edu.cn/search.php?field=problem&key=uva&source=1&searchmode=source" target="_blank" rel="noopener"> uva
-</a></p>
-<h1 id="问题简介："><a href="#问题简介：" class="headerlink" title="问题简介："></a>问题简介：</h1><p>输入正整数n和L，输出由前L个字符组成的、字典顺序第n小的不含相邻重复字串的字符串。  不含相邻重复字串的字符串<br>是指，一个字符串中，任意两个相邻的字串都不相等。输出结果时，对于找到的字符串，每４个字符间加入一个空格，每行输出８０个字符。</p>
-<h2 id="思路分析"><a href="#思路分析" class="headerlink" title="思路分析:"></a>思路分析:</h2><p>##<br>大致的框架就是每次增加一个字符，在增加字符的同时去判断加上这个字符后是否产生了连续的相同子串，这也是很关键的一个点，如何判断是否产生了连续的相同子串，由于采用了回溯的思想，故以前的串是没有连续的相同子串的，故只需从后向前看包含了新字母后有无连续的相同子串。我们可以外层循环去遍历两个子串的长度，从1-(cur+1)/2(即当前串的一半)，内层循环去遍历每一对子串的对应的点，如果在内层循环找到了一个点在两个子串上的对应位置不相等，则在此长度下没有产生连续的相同子串。于是，外层循环的长度加1，去判断下一个子串是否相同。如果找到了某一对连续的相同子串，则此次的分配不合理，尝试在该点分配下一个小于L的字母，如果没有找到一对连续的相同子串，则此次分配合理，可以递归下一个点，并且记录困难子串的变量加一。当变量等于n的时候则输出该序列即可。<br>由于无需返回值，所以直接return 即可。</p>
-<pre><code>package lianxi;
-
-import java.util.Scanner;
-
-public class KryptonFactorUva129 {
-    static Scanner scan = new Scanner(System.in);
-    static int C[]=new int [10000];
-    static int n,l,count=0;
-    public static void main(String[] args) {
-        while(scan.hasNext()){
-            n = scan.nextInt();
-            l = scan.nextInt();
-            getFactor(0);
-            for(int i=0;i&lt;C.length;i++){
-                C[i] = 0;
-            }
-        }
-    }
-    private static int getFactor(int cur) {
-
-        if(count++ == n){
-            for(int i = 0;i&lt;cur;i++){
-                System.out.print((char)(C[i]+&apos;A&apos;));
-            }
-            System.out.println();
-
-            return 0;
-        }
-
-        for(int i=0;i&lt;l;i++){
-            C[cur] = i;
-            int ok = 1;
-            for(int j = 1;j*2&lt;=cur+1;j++){
-                int equal = 1;
-                for(int k = 0;k &lt; j;k++){
-                    if(C[cur - k] != C[cur-k-j] ){
-                        equal = 0;   //找到一个不相同的点本次的测试子段即为困难的串
-                        break;
-                    }
-                }
-                if(equal == 1){
-                    ok = 0;
-                    break;    //存在了相同的连续子串，尝试下一个字母
-                }
-            }
-            if(ok==1){
-                if(getFactor(cur+1) == 0){
-                    return 0;
-                }
-            }
-
-        }
-        return 1;
-
-
-    }
-
-}</code></pre>
-            
-        </article>
-    </div>
     
     <div class="nexmoe-post">
         <a href="/2018/02/13/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E6%B1%82%E5%85%88%E5%BA%8F%E6%8E%92%E5%88%97%20%20%20%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E3%80%91/">
@@ -811,6 +636,104 @@ int main(){
         </article>
     </div>
     
+    <div class="nexmoe-post">
+        <a href="/2017/11/23/PAT-B%201005.%20%E7%BB%A7%E7%BB%AD(3n+1)%E7%8C%9C%E6%83%B3%20(25)%20c++/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="PAT-B 1005. 继续(3n+1)猜想 (25) c++" class="lazyload">
+                    <h1>PAT-B 1005. 继续(3n+1)猜想 (25) c++</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2017年11月23日</a>
+            <a><i class="nexmoefont icon-areachart"></i>617 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+        </div>
+
+        <article>
+            
+                <h1 id="1005-继续-3n-1-猜想-25"><a href="#1005-继续-3n-1-猜想-25" class="headerlink" title="1005. 继续(3n+1)猜想 (25)"></a>1005. 继续(3n+1)猜想 (25)</h1><p>时间限制</p>
+<p>400 ms  </p>
+<p>内存限制</p>
+<p>65536 kB  </p>
+<p>代码长度限制</p>
+<p>8000 B  </p>
+<p>判题程序</p>
+<p>Standard</p>
+<p>作者</p>
+<p>CHEN, Yue  </p>
+<p>卡拉兹(Callatz)猜想已经在1001中给出了描述。在这个题目里，情况稍微有些复杂。</p>
+<p>当我们验证卡拉兹猜想的时候，为了避免重复计算，可以记录下递推过程中遇到的每一个数。例如对n=3进行验证的时候，我们需要计算3、5、8、4、2、1，则当我们对n=5、8、4、2进行验证的时候，就可以直接判定卡拉兹猜想的真伪，而不需要重复计算，因为这4个数已经在验证3的时候遇到过了，我们称5、8、4、2是被3“覆盖”的数。我们称一个数列中的某个数n为“关键数”，如果n不能被数列中的其他数字所覆盖。</p>
+<p>现在给定一系列待验证的数字，我们只需要验证其中的几个关键数，就可以不必再重复验证余下的数字。你的任务就是找出这些关键数字，并按从大到小的顺序输出它们。</p>
+<p><strong>输入格式：</strong><br>每个测试输入包含1个测试用例，第1行给出一个正整数K(&lt;100)，第2行给出K个互不相同的待验证的正整数n(1&lt;n&lt;=100)的值，数字间用空格隔开。</p>
+<p><strong>输出格式：</strong> 每个测试用例的输出占一行，按从大到小的顺序输出关键数字。数字间用1个空格隔开，但一行中最后一个数字后没有空格。</p>
+<p><strong>输入样例：</strong></p>
+<pre><code>6
+3 5 6 7 8 11</code></pre><p><strong>输出样例：</strong></p>
+<p>7 6</p>
+<p>思路分析：只要在对某个数进行猜想的时候  某个  数出现过则  这个数  就不是关键数了。只有这个数不被任何猜想过程包含的时候这个数才是关键数。</p>
+<p>首先可以设置一个bool数组进行标识数的出现与否。</p>
+<p>循环对输入的数进行猜想，如果过程中的n以前没有出现过（为false）则置flag(n)为true，以后在遇到这个数的时候则不对其进行修改了。</p>
+<p>循环输入的测试数据的数组，如果没有出现过则加入到result数组。</p>
+<p>用algorithm下的sort()函数进行从大到小的排序。</p>
+<p>输出。</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2017/11/17/PAT-B%201003.%20%E6%88%91%E8%A6%81%E9%80%9A%E8%BF%87%EF%BC%81(20)%20Java%E7%89%88/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="PAT-B 1003. 我要通过！(20) Java版" class="lazyload">
+                    <h1>PAT-B 1003. 我要通过！(20) Java版</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2017年11月17日</a>
+            <a><i class="nexmoefont icon-areachart"></i>517 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>“ ** 答案正确  ** ”是自动判题系统给出的最令人欢喜的回复。本题属于PAT的“ ** 答案正确  ** ”大派送 ——<br>只要读入的字符串满足下列条件，系统就输出“ ** 答案正确  ** ”，否则输出“ ** 答案错误  ** ”。</p>
+<p>得到“ ** 答案正确  ** ”的条件是：</p>
+<p>1. 字符串中必须仅有P, A, T这三种字符，不可以包含其它字符；<br>2. 任意形如 xPATx 的字符串都可以获得“ ** 答案正确  ** ”，其中 x 或者是空字符串，或者是仅由字母 A 组成的字符串；<br>3. 如果 aPbTc 是正确的，那么 aPbATca 也是正确的，其中 a, b, c 均或者是空字符串，或者是仅由字母 A 组成的字符串。</p>
+<p>现在就请你为PAT写一个自动裁判程序，判定哪些字符串是可以获得“  ** 答案正确  ** ”的。</p>
+<p><strong>输入格式：</strong> 每个测试输入包含1个测试用例。第1行给出一个自然数n<br>(&lt;10)，是需要检测的字符串个数。接下来每个字符串占一行，字符串长度不超过100，且不包含空格。</p>
+<p><strong>输出格式：</strong> 每个字符串的检测结果占一行，如果该字符串可以获得“ ** 答案正确  ** ”，则输出YES，否则输出NO。</p>
+<p><strong>输入样例：</strong></p>
+<pre><code>8
+PAT
+PAAT
+AAPATAA
+AAPAATAAAA
+xPATx
+PT
+Whatever
+APAAATAA</code></pre><p><strong>输出样例：</strong></p>
+<pre><code>YES
+YES
+YES
+YES
+NO
+NO
+NO
+NO
+
+
+
+分析：这道题的难度在于理解题意，它的三个条件之间是有联系的，首先可以排除包含其他字符的情况，然后也可以排除有多个P T 的情况，在每次循环的时候设置一个flag变量，若不符合上述两个条件则flag=false在后面的判断输出中可以直接输出NO，在上述判断过程中flag为true再通过规律判断是否符合。我是没有整明白怎么回事，看了大神的代码后，才明白规律： P前面的A个数*P与T之间的A个数=T后面的A个数</code></pre>
+            
+        </article>
+    </div>
+    
 </section>
 
     <nav class="nexmoe-page-nav">
@@ -821,7 +744,7 @@ int main(){
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1584701703647"></script>-->
+<!--<script src="/js/app.js?v=1584701994113"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
