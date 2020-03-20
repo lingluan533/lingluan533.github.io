@@ -1,306 +1,147 @@
 <!DOCTYPE html>
 
+<html lang="zh-CN">
 
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  <title>凌乱\</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+  <meta property="og:type" content="website">
 <meta property="og:title" content="凌乱\">
 <meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="凌乱\">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Maosheng Zhang">
 <meta name="twitter:card" content="summary">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/page/2/"/>
-
-
-
-
-
-  <title>凌乱\</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
+  <!--<link rel="stylesheet" href="/css/style.css?v=1584705420957">-->
 
-
-
-
-
-
-
-
+  
 <meta name="generator" content="Hexo 4.2.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-
+<body class="mdui-drawer-body-left">
   
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">凌乱\</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="Maosheng Zhang" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Maosheng Zhang"></a>
+       </div>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Maosheng Zhang">
+            <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Maosheng Zhang" alt="Maosheng Zhang">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>24</div>
+        <div><span>标签</span>0</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+        </form>
+    </div>
 </div>
-
-<nav class="site-nav">
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">社交按钮</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
   
 
   
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
-
-      
-    </ul>
   
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a></li></ul>
+    </div>
+  </div>
+
 
   
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 Maosheng Zhang
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <section class="nexmoe-posts">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/13/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E6%B1%82%E5%85%88%E5%BA%8F%E6%8E%92%E5%88%97%20%20%20%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E3%80%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/13/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E6%B1%82%E5%85%88%E5%BA%8F%E6%8E%92%E5%88%97%20%20%20%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E3%80%91/" itemprop="url">算法训练 求先序排列   【二叉树的递归遍历】</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2018/02/13/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E6%B1%82%E5%85%88%E5%BA%8F%E6%8E%92%E5%88%97%20%20%20%E3%80%90%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E3%80%91/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-13T22:41:15+08:00">
-                2018-02-13
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="算法训练 求先序排列   【二叉树的递归遍历】" class="lazyload">
+                    <h1>算法训练 求先序排列   【二叉树的递归遍历】</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月13日</a>
+            <a><i class="nexmoefont icon-areachart"></i>315 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>算法训练 求先序排列</p>
+        <article>
+            
+                <p>算法训练 求先序排列</p>
 <p>时间限制：1.0s 内存限制：256.0MB</p>
 <p>锦囊1</p>
 <p>锦囊2</p>
@@ -345,125 +186,29 @@ public class Main先序排列{
 
 
 }</code></pre>
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/12/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%20%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98%E7%9A%84%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%20java%E7%89%88%20%E5%9B%9E%E6%BA%AF%E6%80%9D%E6%83%B3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/12/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%20%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98%E7%9A%84%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%20java%E7%89%88%20%E5%9B%9E%E6%BA%AF%E6%80%9D%E6%83%B3/" itemprop="url">算法学习 八皇后问题的递归实现 java版 回溯思想</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2018/02/12/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%20%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98%E7%9A%84%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%20java%E7%89%88%20%E5%9B%9E%E6%BA%AF%E6%80%9D%E6%83%B3/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-12T21:20:43+08:00">
-                2018-02-12
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="算法学习 八皇后问题的递归实现 java版 回溯思想" class="lazyload">
+                    <h1>算法学习 八皇后问题的递归实现 java版 回溯思想</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月12日</a>
+            <a><i class="nexmoefont icon-areachart"></i>713 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>** 1.问题描述  **</p>
+        <article>
+            
+                <p>** 1.问题描述  **</p>
 <p>八皇后问题是一个以国际象棋为背景的问题：如何能够在 8×8<br>的国际象棋棋盘上放置八个皇后，使得任何一个皇后都无法直接吃掉其他的皇后？为了达到此目的，任两个皇后都不能处于同一条横行、纵行或斜线上。八皇后问题可以推广为更一般的n皇后摆放问题：这时棋盘的大小变为n×n，而皇后个数也变成n。当且仅当<br>n = 1 或 n ≥ 4 时问题有解。</p>
 <p>![](<a href="https://img-" target="_blank" rel="noopener">https://img-</a><br>blog.csdn.net/20180212210140811?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDk2ODM1MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  </p>
 <p>** 2.思路分析  **</p>
@@ -531,125 +276,29 @@ public class EightQueen {
 
 
 }</code></pre>
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/08/UVa%2011059%20%E6%9C%80%E5%A4%A7%E4%B9%98%E7%A7%AF%20java%20%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/08/UVa%2011059%20%E6%9C%80%E5%A4%A7%E4%B9%98%E7%A7%AF%20java%20%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3/" itemprop="url">UVa 11059 最大乘积 java 暴力破解</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2018/02/08/UVa%2011059%20%E6%9C%80%E5%A4%A7%E4%B9%98%E7%A7%AF%20java%20%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-08T01:20:06+08:00">
-                2018-02-08
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="UVa 11059 最大乘积 java 暴力破解" class="lazyload">
+                    <h1>UVa 11059 最大乘积 java 暴力破解</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月08日</a>
+            <a><i class="nexmoefont icon-areachart"></i>173 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>题目链接：</p>
+        <article>
+            
+                <p>题目链接：</p>
 <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=2000" target="_blank" rel="noopener">https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=2000</a>  </p>
 <p>暴力破解</p>
 <p>import java.util.Scanner;  </p>
@@ -658,385 +307,97 @@ public class EightQueen {
 <p>for(int j = 0;i+j&lt;=count;j++){ //相同的长度根据不同的起点划分<br>a = 1;<br>for(int x = j;x&lt;j+i;x++){ //对每个段内进行累乘，将该序列与纪录最大量的变量进行对比，赋值给最大量变量<br>a *= data[x];<br>}<br>max = Math.max(max, a);<br>}<br>}<br>System.out.println(max);<br>}<br>}  </p>
 <p>}</p>
 
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/06/java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%B0%83%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8C%BA%E5%88%AB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/06/java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%B0%83%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8C%BA%E5%88%AB/" itemprop="url">java基本数据类型和引用数据类型的调用传递的区别</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2018/02/06/java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%B0%83%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8C%BA%E5%88%AB/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-06T22:13:07+08:00">
-                2018-02-06
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="java基本数据类型和引用数据类型的调用传递的区别" class="lazyload">
+                    <h1>java基本数据类型和引用数据类型的调用传递的区别</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月06日</a>
+            <a><i class="nexmoefont icon-areachart"></i>338 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>（1）基本数据类型：就是进行了值的传递把一份数据拷贝了之后传递过去</p>
+        <article>
+            
+                <p>（1）基本数据类型：就是进行了值的传递把一份数据拷贝了之后传递过去</p>
 <p>（2）引用数据类型：实际上也是进行了数据拷贝然后传过去，实际上也是值传递，只  不过传递过去的值和原有的值指向了同一个对象<br>所以在调用的方法中可以对原来的数据进行影响，这是因为二者指向的是同一个对象。 但这不是按引用调用！如下代码可证明这一点：</p>
 <p>对象之间的赋值是需要指针相互赋值的，而由于这里User<br>x和y仅仅是一个值的拷贝，他们仅仅是表面上的东西是一个实例，对他们进行交换不会影响在底层的真正的对象的交换。所以这个函数调用不会引起两个对象的交换</p>
 <p>但是如果在被调用的函数中  ，拷贝的对象执行了对于真正对象的数据修改是可以改变后续的对象的值的，因为后续的对象仍然会引用这个被修改过的对象<br>。比如以下代码证明了这一点：</p>
 <p>这个过程实际上是这样的：</p>
 <p>![](<a href="https://img-" target="_blank" rel="noopener">https://img-</a><br>blog.csdn.net/20160419170656251?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)</p>
 
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/07/%E4%BD%BF%E7%94%A8sstream%E8%BF%9B%E8%A1%8Cint%E8%BD%AC%E6%8D%A2string%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/07/%E4%BD%BF%E7%94%A8sstream%E8%BF%9B%E8%A1%8Cint%E8%BD%AC%E6%8D%A2string%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" itemprop="url">使用sstream进行int转换string的注意事项</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2017/12/07/%E4%BD%BF%E7%94%A8sstream%E8%BF%9B%E8%A1%8Cint%E8%BD%AC%E6%8D%A2string%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-07T23:13:17+08:00">
-                2017-12-07
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="使用sstream进行int转换string的注意事项" class="lazyload">
+                    <h1>使用sstream进行int转换string的注意事项</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2017年12月07日</a>
+            <a><i class="nexmoefont icon-areachart"></i>353 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>个人网站 ：<a href="http://39.106.25.239/" target="_blank" rel="noopener">http://39.106.25.239/</a></p>
+        <article>
+            
+                <p>个人网站 ：<a href="http://39.106.25.239/" target="_blank" rel="noopener">http://39.106.25.239/</a></p>
 <p>1.引入sstream文件</p>
 <p>2.使用stringstream 声明</p>
 <p>3.使用一次sstream转换后要执行成员函数.clear() 来清除stringstream中的字符串 否则，永远只对第一次的字符串生效。</p>
 <p>转载自： <a href="http://www.cnitblog.com/30701735/articles/44699.html" target="_blank" rel="noopener"> http://www.cnitblog.com/30701735/articles/44699.html
 </a></p>
 <p>C++标准库中的stringStreams是从iostream类派生而来的,也因为其内部重载了针对各重内置类型和某些标准库类型(如string)的确”&lt;&lt;”和”&gt;&gt;”操作符,所以可以用来进行类型之间的转换.看起来比较简单,但因为一般的C++书籍对其介绍比较少,经过测试之后发觉有些东西还是需要注意的.<br>例如以下代码段:  </p>
-<p>1  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> int  a;<br>2  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> //  字符串流<br>3  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""><br>stringstream strStream;<br>4  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> strStream<br>&lt;&lt; “345”;<br>5  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> strStream</p>
+<p>1  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> int  a;<br>2  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> //  字符串流<br>3  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"><br>stringstream strStream;<br>4  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> strStream<br>&lt;&lt; “345”;<br>5  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> strStream</p>
 <blockquote>
 <blockquote>
-<p>a;<br>6  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> cout &lt;&lt; a<br>&lt;&lt; endl;<br>7  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""><br>strStream.clear();<br>8  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> strStream<br>&lt;&lt; “34561”;<br>9  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> strStream<br>a;<br>10  <img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> cout &lt;&lt; a<br>&lt;&lt; endl;</p>
+<p>a;<br>6  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> cout &lt;&lt; a<br>&lt;&lt; endl;<br>7  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"><br>strStream.clear();<br>8  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> strStream<br>&lt;&lt; “34561”;<br>9  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> strStream<br>a;<br>10  <img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> cout &lt;&lt; a<br>&lt;&lt; endl;</p>
 </blockquote>
 </blockquote>
-<p>输出为:<br><img src="http://www.cnitblog.com/images/cnitblog_com/30701735/1.JPG" alt=""><br>但如果稍微改动下代码:  </p>
-<p><img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> strStream &lt;&lt;<br>“345a”;<br><img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> strStream &gt;&gt;<br>a;<br><img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> cout &lt;&lt; a &lt;&lt;<br>endl;<br><img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""><br>strStream.clear();<br><img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> strStream &lt;&lt;<br>“34561”;<br><img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> strStream &gt;&gt;<br>a;<br><img src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt=""> cout &lt;&lt; a &lt;&lt;<br>endl;</p>
-<p>则输出结果就变为:<br><img src="http://www.cnitblog.com/images/cnitblog_com/30701735/2.JPG" alt=""><br>为什么呢?因为 strStream &lt;&lt; “345a”;<br>strStream &gt;&gt;<br>a;这两句并未将strStream内的内容读取完毕导致strStream.clear()无效,程序并没有清除strStream中的字符串,所以在下次从strStream中输出的时候还是会读取到345.</p>
+<p>输出为:<br><img data-sizes="auto" data-src="http://www.cnitblog.com/images/cnitblog_com/30701735/1.JPG" alt="" class="lazyload"><br>但如果稍微改动下代码:  </p>
+<p><img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> strStream &lt;&lt;<br>“345a”;<br><img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> strStream &gt;&gt;<br>a;<br><img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> cout &lt;&lt; a &lt;&lt;<br>endl;<br><img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"><br>strStream.clear();<br><img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> strStream &lt;&lt;<br>“34561”;<br><img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> strStream &gt;&gt;<br>a;<br><img data-sizes="auto" data-src="http://www.cnitblog.com/Images/OutliningIndicators/None.gif" alt="" class="lazyload"> cout &lt;&lt; a &lt;&lt;<br>endl;</p>
+<p>则输出结果就变为:<br><img data-sizes="auto" data-src="http://www.cnitblog.com/images/cnitblog_com/30701735/2.JPG" alt="" class="lazyload"><br>为什么呢?因为 strStream &lt;&lt; “345a”;<br>strStream &gt;&gt;<br>a;这两句并未将strStream内的内容读取完毕导致strStream.clear()无效,程序并没有清除strStream中的字符串,所以在下次从strStream中输出的时候还是会读取到345.</p>
 
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/06/pat%20%E4%B9%99%E7%BA%A7%201015.%20%E5%BE%B7%E6%89%8D%E8%AE%BA%20(25)%20c++/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/06/pat%20%E4%B9%99%E7%BA%A7%201015.%20%E5%BE%B7%E6%89%8D%E8%AE%BA%20(25)%20c++/" itemprop="url">pat 乙级 1015. 德才论 (25) c++</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2017/12/06/pat%20%E4%B9%99%E7%BA%A7%201015.%20%E5%BE%B7%E6%89%8D%E8%AE%BA%20(25)%20c++/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-06T23:10:24+08:00">
-                2017-12-06
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="pat 乙级 1015. 德才论 (25) c++" class="lazyload">
+                    <h1>pat 乙级 1015. 德才论 (25) c++</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2017年12月06日</a>
+            <a><i class="nexmoefont icon-areachart"></i>1.5k 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 7 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>﻿﻿</p>
+        <article>
+            
+                <p>﻿﻿</p>
 <h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><a href="http://39.106.25.239" target="_blank" rel="noopener"> http://39.106.25.239 </a></p>
 <p>个人网站 欢迎访问 交流</p>
 <h1 id="1015-德才论-25"><a href="#1015-德才论-25" class="headerlink" title="1015. 德才论 (25)"></a>1015. 德才论 (25)</h1><p>时间限制</p>
@@ -1159,125 +520,29 @@ int main(){
 <p>}</p>
 <p>}  </p>
 
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/06/pat%20%E4%B9%99%E7%BA%A7%201008.%20%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E5%BE%AA%E7%8E%AF%E5%8F%B3%E7%A7%BB%E9%97%AE%E9%A2%98%20(20)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/06/pat%20%E4%B9%99%E7%BA%A7%201008.%20%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E5%BE%AA%E7%8E%AF%E5%8F%B3%E7%A7%BB%E9%97%AE%E9%A2%98%20(20)/" itemprop="url">pat 乙级 1008. 数组元素循环右移问题 (20)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2017/12/06/pat%20%E4%B9%99%E7%BA%A7%201008.%20%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E5%BE%AA%E7%8E%AF%E5%8F%B3%E7%A7%BB%E9%97%AE%E9%A2%98%20(20)/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-06T20:31:17+08:00">
-                2017-12-06
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="pat 乙级 1008. 数组元素循环右移问题 (20)" class="lazyload">
+                    <h1>pat 乙级 1008. 数组元素循环右移问题 (20)</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2017年12月06日</a>
+            <a><i class="nexmoefont icon-areachart"></i>721 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>﻿﻿</p>
+        <article>
+            
+                <p>﻿﻿</p>
 <h1 id="1008-数组元素循环右移问题-20"><a href="#1008-数组元素循环右移问题-20" class="headerlink" title="1008. 数组元素循环右移问题 (20)"></a>1008. 数组元素循环右移问题 (20)</h1><p>时间限制</p>
 <p>400 ms  </p>
 <p>内存限制</p>
@@ -1304,125 +569,29 @@ int main(){
 <p>}<br>while(!b.empty()){<br>cout&lt;&lt;b.top()&lt;&lt;” “;<br>b.pop();<br>}<br>while(!a1.empty()){<br>if(a1.size()==1){<br>cout&lt;&lt;a1.top();<br>}else{<br>cout&lt;&lt;a1.top()&lt;&lt;” “;<br>}<br>a1.pop();<br>}<br>return 0;<br>}  </p>
 <p><a href="http://39.106.25.239/" target="_blank" rel="noopener"> http://39.106.25.239/ </a> 个人做的项目 希望大家访问一下  </p>
 
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/27/PAT%20%E4%B9%99%E7%BA%A7%201007.%20%E7%B4%A0%E6%95%B0%E5%AF%B9%E7%8C%9C%E6%83%B3%20(20)%20c++%20%E7%AD%9B%E9%80%89%E6%B3%95%E6%B1%82%E7%B4%A0%E6%95%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/27/PAT%20%E4%B9%99%E7%BA%A7%201007.%20%E7%B4%A0%E6%95%B0%E5%AF%B9%E7%8C%9C%E6%83%B3%20(20)%20c++%20%E7%AD%9B%E9%80%89%E6%B3%95%E6%B1%82%E7%B4%A0%E6%95%B0/" itemprop="url">PAT 乙级 1007. 素数对猜想 (20) c++ 筛选法求素数</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2017/11/27/PAT%20%E4%B9%99%E7%BA%A7%201007.%20%E7%B4%A0%E6%95%B0%E5%AF%B9%E7%8C%9C%E6%83%B3%20(20)%20c++%20%E7%AD%9B%E9%80%89%E6%B3%95%E6%B1%82%E7%B4%A0%E6%95%B0/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-27T19:19:22+08:00">
-                2017-11-27
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="PAT 乙级 1007. 素数对猜想 (20) c++ 筛选法求素数" class="lazyload">
+                    <h1>PAT 乙级 1007. 素数对猜想 (20) c++ 筛选法求素数</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2017年11月27日</a>
+            <a><i class="nexmoefont icon-areachart"></i>620 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>PAT 乙级 1007. 素数对猜想 (20) c++ 筛选法求素数</p>
+        <article>
+            
+                <p>PAT 乙级 1007. 素数对猜想 (20) c++ 筛选法求素数</p>
 <p>让我们定义 dn 为：dn = pn+1 - pn，其中 pi 是第i个素数。显然有 d1=1 且对于n&gt;1有 dn<br>是偶数。“素数对猜想”认为“存在无穷多对相邻且差为2的素数”。</p>
 <p>现给定任意正整数N (&lt; 105)，请计算不超过N的满足猜想的素数对的个数。</p>
 <p>输入格式：每个测试输入包含1个测试用例，给出正整数N。</p>
@@ -1463,125 +632,29 @@ int main(){
     getprime(N);
     return 0;
 }</code></pre>
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/23/PAT-B%201005.%20%E7%BB%A7%E7%BB%AD(3n+1)%E7%8C%9C%E6%83%B3%20(25)%20c++/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/23/PAT-B%201005.%20%E7%BB%A7%E7%BB%AD(3n+1)%E7%8C%9C%E6%83%B3%20(25)%20c++/" itemprop="url">PAT-B 1005. 继续(3n+1)猜想 (25) c++</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2017/11/23/PAT-B%201005.%20%E7%BB%A7%E7%BB%AD(3n+1)%E7%8C%9C%E6%83%B3%20(25)%20c++/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-23T23:27:19+08:00">
-                2017-11-23
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="PAT-B 1005. 继续(3n+1)猜想 (25) c++" class="lazyload">
+                    <h1>PAT-B 1005. 继续(3n+1)猜想 (25) c++</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2017年11月23日</a>
+            <a><i class="nexmoefont icon-areachart"></i>617 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="1005-继续-3n-1-猜想-25"><a href="#1005-继续-3n-1-猜想-25" class="headerlink" title="1005. 继续(3n+1)猜想 (25)"></a>1005. 继续(3n+1)猜想 (25)</h1><p>时间限制</p>
+        <article>
+            
+                <h1 id="1005-继续-3n-1-猜想-25"><a href="#1005-继续-3n-1-猜想-25" class="headerlink" title="1005. 继续(3n+1)猜想 (25)"></a>1005. 继续(3n+1)猜想 (25)</h1><p>时间限制</p>
 <p>400 ms  </p>
 <p>内存限制</p>
 <p>65536 kB  </p>
@@ -1607,125 +680,29 @@ int main(){
 <p>用algorithm下的sort()函数进行从大到小的排序。</p>
 <p>输出。</p>
 
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/17/PAT-B%201003.%20%E6%88%91%E8%A6%81%E9%80%9A%E8%BF%87%EF%BC%81(20)%20Java%E7%89%88/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maosheng Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌乱\">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/17/PAT-B%201003.%20%E6%88%91%E8%A6%81%E9%80%9A%E8%BF%87%EF%BC%81(20)%20Java%E7%89%88/" itemprop="url">PAT-B 1003. 我要通过！(20) Java版</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+    <div class="nexmoe-post">
+        <a href="/2017/11/17/PAT-B%201003.%20%E6%88%91%E8%A6%81%E9%80%9A%E8%BF%87%EF%BC%81(20)%20Java%E7%89%88/">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-17T20:43:49+08:00">
-                2017-11-17
-              </time>
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="PAT-B 1003. 我要通过！(20) Java版" class="lazyload">
+                    <h1>PAT-B 1003. 我要通过！(20) Java版</h1>
+                </div>
             
+        </a>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2017年11月17日</a>
+            <a><i class="nexmoefont icon-areachart"></i>517 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>“ ** 答案正确  ** ”是自动判题系统给出的最令人欢喜的回复。本题属于PAT的“ ** 答案正确  ** ”大派送 ——<br>只要读入的字符串满足下列条件，系统就输出“ ** 答案正确  ** ”，否则输出“ ** 答案错误  ** ”。</p>
+        <article>
+            
+                <p>“ ** 答案正确  ** ”是自动判题系统给出的最令人欢喜的回复。本题属于PAT的“ ** 答案正确  ** ”大派送 ——<br>只要读入的字符串满足下列条件，系统就输出“ ** 答案正确  ** ”，否则输出“ ** 答案错误  ** ”。</p>
 <p>得到“ ** 答案正确  ** ”的条件是：</p>
 <p>1. 字符串中必须仅有P, A, T这三种字符，不可以包含其它字符；<br>2. 任意形如 xPATx 的字符串都可以获得“ ** 答案正确  ** ”，其中 x 或者是空字符串，或者是仅由字母 A 组成的字符串；<br>3. 如果 aPbTc 是正确的，那么 aPbATca 也是正确的，其中 a, b, c 均或者是空字符串，或者是仅由字母 A 组成的字符串。</p>
 <p>现在就请你为PAT写一个自动裁判程序，判定哪些字符串是可以获得“  ** 答案正确  ** ”的。</p>
@@ -1753,190 +730,24 @@ NO
 
 
 分析：这道题的难度在于理解题意，它的三个条件之间是有联系的，首先可以排除包含其他字符的情况，然后也可以排除有多个P T 的情况，在每次循环的时候设置一个flag变量，若不符合上述两个条件则flag=false在后面的判断输出中可以直接输出NO，在上述判断过程中flag为true再通过规律判断是否符合。我是没有整明白怎么回事，看了大神的代码后，才明白规律： P前面的A个数*P与T之间的A个数=T后面的A个数</code></pre>
-          
-        
-      
+            
+        </article>
     </div>
     
-    
-    
+</section>
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
+    <nav class="nexmoe-page-nav">
+      <a class="extend prev" rel="prev" href="/"><i class="nexmoefont icon-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="nexmoefont icon-right"></i></a>
+    </nav>
   
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/">&lt;i class&#x3D;&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Maosheng Zhang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/%20%7C%7C%20archive">
-              
-                  <span class="site-state-item-count">24</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!--<script src="/js/app.js?v=1584705420959"></script>-->
 
 
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Maosheng Zhang</span>
-
-  
-</div>
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
 
@@ -1945,119 +756,7 @@ NO
 
 
 
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
 
 </body>
+
 </html>
