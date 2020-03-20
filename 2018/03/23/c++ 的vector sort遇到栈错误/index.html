@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>文章归档：2020/3 - 凌乱\</title>
+  <title>c++ 的vector sort遇到栈错误 - 凌乱\</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,16 +12,20 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta property="og:type" content="website">
-<meta property="og:title" content="凌乱\">
-<meta property="og:url" content="http://yoursite.com/archives/2020/03/index.html">
+  <meta name="description" content="在做pat乙级1082 射击比赛时 遇到了sort 段错误。 题目链接：https:&#x2F;&#x2F;www.patest.cn&#x2F;contests&#x2F;pat-b-practise&#x2F;1082 感觉写的没啥毛病 但就是段错误 ，搜索了一下才明白，原来是sort函数在极端相等的情况下，比如比较的元素内容完全相同，sort会一直遍历下去直到越界。 *![](https:&#x2F;&#x2F;img-blog.csdn.net&#x2F;201803">
+<meta property="og:type" content="article">
+<meta property="og:title" content="c++ 的vector sort遇到栈错误">
+<meta property="og:url" content="http://yoursite.com/2018/03/23/c++%20%E7%9A%84vector%20sort%E9%81%87%E5%88%B0%E6%A0%88%E9%94%99%E8%AF%AF/index.html">
 <meta property="og:site_name" content="凌乱\">
+<meta property="og:description" content="在做pat乙级1082 射击比赛时 遇到了sort 段错误。 题目链接：https:&#x2F;&#x2F;www.patest.cn&#x2F;contests&#x2F;pat-b-practise&#x2F;1082 感觉写的没啥毛病 但就是段错误 ，搜索了一下才明白，原来是sort函数在极端相等的情况下，比如比较的元素内容完全相同，sort会一直遍历下去直到越界。 *![](https:&#x2F;&#x2F;img-blog.csdn.net&#x2F;201803">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-03-23T09:14:26.000Z">
+<meta property="article:modified_time" content="2020-03-20T09:58:03.332Z">
 <meta property="article:author" content="Maosheng Zhang">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703620">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703562">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -121,66 +125,88 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        
-<section class="nexmoe-archives">
+        <div class="nexmoe-post">
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="c++ 的vector sort遇到栈错误" class="lazyload">
+          <h1>c++ 的vector sort遇到栈错误</h1>
+      </div>
+  
+  
+  <div class="nexmoe-post-meta" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2018年03月23日</a>
+    <a><i class="nexmoefont icon-areachart"></i>275 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+</div>
 
-    <article>
-        
+  <div class="nexmoe-post-right">
+    
+  </div>
 
-        
-    </article>
+  <article>
+    <p>在做pat乙级1082 射击比赛时 遇到了sort 段错误。</p>
+<p>题目链接：<a href="https://www.patest.cn/contests/pat-b-practise/1082" target="_blank" rel="noopener">https://www.patest.cn/contests/pat-b-practise/1082</a></p>
+<p>感觉写的没啥毛病 但就是段错误 ，搜索了一下才明白，原来是sort函数在极端相等的情况下，比如比较的元素内容完全相同，sort会一直遍历下去直到<br><strong>越界。</strong></p>
+<p>*<em>![](<a href="https://img-" target="_blank" rel="noopener">https://img-</a><br>blog.csdn.net/20180323171403648?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA5NjgzNTA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)<br>*</em></p>
+<p>**<br>**</p>
+<p><strong>我原来的写法是：</strong></p>
+<p>** int compar(stu s1,stu s2){<br>return s1.juli-s2.juli;  </p>
+<p>**</p>
+<p>** }  **</p>
+<p>记得以前这样写是没问题，还是我记错了，在java中写没问题？</p>
+<p>反正  以后记住 <strong>比较器用bool返回值</strong> 就  好了额。。！！</p>
+<p>#include<iostream></p>
+<p>#include&lt;stdio.h&gt;<br>#include<algorithm><br>using namespace std;<br>#include<vector><br>#include<string><br>#include<cmath>  </p>
+<p>struct stu{<br>string bianhao;<br>int x;<br>int y;<br>int juli;  </p>
+<p>};<br>bool compar(stu s1,stu s2){<br>return s1.juli&gt;s2.juli;  </p>
+<p>}<br>int main(){<br>int k;<br>scanf(“%d”,&amp;k);<br>vector<stu> vec;<br>for(int i=0;i&lt;k;i++){<br>stu s ;<br>cin&gt;&gt;s.bianhao&gt;&gt;s.x&gt;&gt;s.y;<br>s.juli = s.x<em>s.x+s.y</em>s.y;<br>vec.push_back(s);  </p>
+<p>}<br>if(k==0){  </p>
+<p>return 0;<br>}<br>sort(vec.begin(),vec.end(),compar);  </p>
+<p>cout&lt;&lt;vec[k-1].bianhao&lt;&lt;” “&lt;&lt;vec[0].bianhao;<br>return 0;<br>}  </p>
+
+  </article>
+
+  <div class="nexmoe-post-meta">
+    
+    
+</div>
+
+  <div class="nexmoe-post-footer">
+    
+      
+  <div class="nexmoe-post-copyright">
+    <strong>本文作者：</strong>Maosheng Zhang<br>
+    <strong>本文链接：</strong><a href="http://yoursite.com/2018/03/23/c++%20%E7%9A%84vector%20sort%E9%81%87%E5%88%B0%E6%A0%88%E9%94%99%E8%AF%AF/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;03&#x2F;23&#x2F;c++%20%E7%9A%84vector%20sort%E9%81%87%E5%88%B0%E6%A0%88%E9%94%99%E8%AF%AF&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;03&#x2F;23&#x2F;c++%20%E7%9A%84vector%20sort%E9%81%87%E5%88%B0%E6%A0%88%E9%94%99%E8%AF%AF&#x2F;</a><br>
+    
+      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+    
+  </div>
+
+
+    
+    <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
 </section>
-
-<style>
-.nexmoe-archives article > *:first-child {
-    margin-top: 0;
-}
-.nexmoe-archives article > *:last-child {
-    margin-bottom: 0;
-}
-.nexmoe-archives ul {
-    list-style: none;
-    padding-left: 0!important;
-}
-.nexmoe-archives li {
-    position: relative;
-    padding: 10px 0;
-}
-.nexmoe-archives li::before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    background: #ff4e6a;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -2px;
-    margin-right: 11px;
-    border-radius: 100%;
-    border: 3px solid #fff;
-    z-index: 100;
-    position: relative;
-}
-.nexmoe-archives li::after {
-    content: "";
-    height: 100%;
-    width: 2px;
-    background: rgba(255, 78, 106, 0.2);
-    position: absolute;
-    left: 6px;
-    top: 20px;
-}
-.nexmoe-archives li:last-child:after {
-    display: none;
-}
-.nexmoe-archives span {
-    margin-right: 15px;
-}
-</style>
+  </div>
+</div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1584701703622"></script>-->
+<!--<script src="/js/app.js?v=1584701703563"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>

@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>Hello World - 凌乱\</title>
+  <title>java基本数据类型和引用数据类型的调用传递的区别 - 凌乱\</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,20 +12,20 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="（1）基本数据类型：就是进行了值的传递把一份数据拷贝了之后传递过去 （2）引用数据类型：实际上也是进行了数据拷贝然后传过去，实际上也是值传递，只  不过传递过去的值和原有的值指向了同一个对象所以在调用的方法中可以对原来的数据进行影响，这是因为二者指向的是同一个对象。 但这不是按引用调用！如下代码可证明这一点： 对象之间的赋值是需要指针相互赋值的，而由于这里Userx和y仅仅是一个值的拷贝，他们仅仅">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/03/20/hello-world/index.html">
+<meta property="og:title" content="java基本数据类型和引用数据类型的调用传递的区别">
+<meta property="og:url" content="http://yoursite.com/2018/02/06/java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%B0%83%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
 <meta property="og:site_name" content="凌乱\">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="（1）基本数据类型：就是进行了值的传递把一份数据拷贝了之后传递过去 （2）引用数据类型：实际上也是进行了数据拷贝然后传过去，实际上也是值传递，只  不过传递过去的值和原有的值指向了同一个对象所以在调用的方法中可以对原来的数据进行影响，这是因为二者指向的是同一个对象。 但这不是按引用调用！如下代码可证明这一点： 对象之间的赋值是需要指针相互赋值的，而由于这里Userx和y仅仅是一个值的拷贝，他们仅仅">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-20T06:08:47.974Z">
-<meta property="article:modified_time" content="2020-03-20T06:08:47.974Z">
+<meta property="article:published_time" content="2018-02-06T14:13:07.000Z">
+<meta property="article:modified_time" content="2020-03-20T09:58:08.708Z">
 <meta property="article:author" content="Maosheng Zhang">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703540">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703574">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -128,14 +128,14 @@
         <div class="nexmoe-post">
   
       <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
-          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
-          <h1>Hello World</h1>
+          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="java基本数据类型和引用数据类型的调用传递的区别" class="lazyload">
+          <h1>java基本数据类型和引用数据类型的调用传递的区别</h1>
       </div>
   
   
   <div class="nexmoe-post-meta" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2020年03月20日</a>
-    <a><i class="nexmoefont icon-areachart"></i>73 字</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月06日</a>
+    <a><i class="nexmoefont icon-areachart"></i>338 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
 </div>
 
@@ -144,19 +144,12 @@
   </div>
 
   <article>
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <p>（1）基本数据类型：就是进行了值的传递把一份数据拷贝了之后传递过去</p>
+<p>（2）引用数据类型：实际上也是进行了数据拷贝然后传过去，实际上也是值传递，只  不过传递过去的值和原有的值指向了同一个对象<br>所以在调用的方法中可以对原来的数据进行影响，这是因为二者指向的是同一个对象。 但这不是按引用调用！如下代码可证明这一点：</p>
+<p>对象之间的赋值是需要指针相互赋值的，而由于这里User<br>x和y仅仅是一个值的拷贝，他们仅仅是表面上的东西是一个实例，对他们进行交换不会影响在底层的真正的对象的交换。所以这个函数调用不会引起两个对象的交换</p>
+<p>但是如果在被调用的函数中  ，拷贝的对象执行了对于真正对象的数据修改是可以改变后续的对象的值的，因为后续的对象仍然会引用这个被修改过的对象<br>。比如以下代码证明了这一点：</p>
+<p>这个过程实际上是这样的：</p>
+<p>![](<a href="https://img-" target="_blank" rel="noopener">https://img-</a><br>blog.csdn.net/20160419170656251?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)</p>
 
   </article>
 
@@ -170,7 +163,7 @@
       
   <div class="nexmoe-post-copyright">
     <strong>本文作者：</strong>Maosheng Zhang<br>
-    <strong>本文链接：</strong><a href="http://yoursite.com/2020/03/20/hello-world/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;20&#x2F;hello-world&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;20&#x2F;hello-world&#x2F;</a><br>
+    <strong>本文链接：</strong><a href="http://yoursite.com/2018/02/06/java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%B0%83%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8C%BA%E5%88%AB/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;02&#x2F;06&#x2F;java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%B0%83%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;02&#x2F;06&#x2F;java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%B0%83%E7%94%A8%E4%BC%A0%E9%80%92%E7%9A%84%E5%8C%BA%E5%88%AB&#x2F;</a><br>
     
       <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
     
@@ -200,7 +193,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1584701703543"></script>-->
+<!--<script src="/js/app.js?v=1584701703577"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>

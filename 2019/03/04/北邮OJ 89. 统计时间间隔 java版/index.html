@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>Hello World - 凌乱\</title>
+  <title>北邮OJ 89. 统计时间间隔 java版 - 凌乱\</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,20 +12,20 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="89. 统计时间间隔时间限制 1000 ms 内存限制 65536 KB 题目描述给出两个时间(24小时制)，求第一个时间至少要经过多久才能到达第二个时间。给出的时间一定满足的形式，其中x和y分别代表小时和分钟。0≤x&lt;24,0≤y&lt;60。 输入格式第一行为数据组数T(1≤T≤50000)。每组数据包括两行，分别代表两个时间 输出格式每组数据输出一行，表示最少经过的分钟数。 输入样例2">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/03/20/hello-world/index.html">
+<meta property="og:title" content="北邮OJ 89. 统计时间间隔 java版">
+<meta property="og:url" content="http://yoursite.com/2019/03/04/%E5%8C%97%E9%82%AEOJ%2089.%20%E7%BB%9F%E8%AE%A1%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%20java%E7%89%88/index.html">
 <meta property="og:site_name" content="凌乱\">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="89. 统计时间间隔时间限制 1000 ms 内存限制 65536 KB 题目描述给出两个时间(24小时制)，求第一个时间至少要经过多久才能到达第二个时间。给出的时间一定满足的形式，其中x和y分别代表小时和分钟。0≤x&lt;24,0≤y&lt;60。 输入格式第一行为数据组数T(1≤T≤50000)。每组数据包括两行，分别代表两个时间 输出格式每组数据输出一行，表示最少经过的分钟数。 输入样例2">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-20T06:08:47.974Z">
-<meta property="article:modified_time" content="2020-03-20T06:08:47.974Z">
+<meta property="article:published_time" content="2019-03-04T02:01:26.000Z">
+<meta property="article:modified_time" content="2020-03-20T09:58:01.299Z">
 <meta property="article:author" content="Maosheng Zhang">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703540">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703550">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -128,14 +128,14 @@
         <div class="nexmoe-post">
   
       <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
-          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
-          <h1>Hello World</h1>
+          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="北邮OJ 89. 统计时间间隔 java版" class="lazyload">
+          <h1>北邮OJ 89. 统计时间间隔 java版</h1>
       </div>
   
   
   <div class="nexmoe-post-meta" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2020年03月20日</a>
-    <a><i class="nexmoefont icon-areachart"></i>73 字</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2019年03月04日</a>
+    <a><i class="nexmoefont icon-areachart"></i>406 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
 </div>
 
@@ -144,20 +144,52 @@
   </div>
 
   <article>
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <h1 id="89-统计时间间隔"><a href="#89-统计时间间隔" class="headerlink" title="89. 统计时间间隔"></a>89. 统计时间间隔</h1><p><strong>时间限制</strong> 1000 ms <strong>内存限制</strong> 65536 KB</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给出两个时间(24小时制)，求第一个时间至少要经过多久才能到达第二个时间。给出的时间一定满足的形式，其中x和y分别代表小时和分钟。0≤x&lt;24,0≤y&lt;60。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行为数据组数T(1≤T≤50000)。<br>每组数据包括两行，分别代表两个时间</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>每组数据输出一行，表示最少经过的分钟数。</p>
+<h2 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h2><pre><code>2
+7:00
+7:00
+7:00
+8:00</code></pre><h2 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h2><pre><code>0
+60</code></pre><p>乍一想有点复杂，情况比较多。但是把两个时间都化为以0：00为开始的分钟表示时就简单多了，无非就两种情况，一个是第一个分钟数大于第二个还有第二个大于第一个。</p>
+<p>那么这就相当于一个环， 不是求优弧长度，就是求劣弧长度，劣弧长度很好求，大的减去小的即可，优弧长度要用总长度24*60减去劣弧长度。</p>
+<pre><code>package test;
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+import java.io.BufferedInputStream;
+import java.util.Scanner;
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+public class TimejiangeMain {
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(new BufferedInputStream(System.in));
+        int T = scan.nextInt();
+        int h1,m1,h2,m2,time11,time22;
+        String time1,time2;
+        scan.nextLine();
+        int time;
+        for(int i = 0;i&lt;T ;i++){
+            time1 = scan.nextLine();
+            h1 = Integer.parseInt(time1.split(&quot;:&quot;)[0]);
+            m1 = Integer.parseInt(time1.split(&quot;:&quot;)[1]);
+            time11 = h1*60 + m1;
+            time2 = scan.nextLine();
+            h2 = Integer.parseInt(time2.split(&quot;:&quot;)[0]);
+            m2 = Integer.parseInt(time2.split(&quot;:&quot;)[1]);
+            time22 = h2*60 + m2;
+            if(time11&lt;=time22){
+                time = time22-time11;
+                System.out.println(time);
+            }else{
+                 time = 24*60-(time11-time22);
+                 System.out.println(time);
+            }
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        }
+    }
 
+}</code></pre>
   </article>
 
   <div class="nexmoe-post-meta">
@@ -170,7 +202,7 @@
       
   <div class="nexmoe-post-copyright">
     <strong>本文作者：</strong>Maosheng Zhang<br>
-    <strong>本文链接：</strong><a href="http://yoursite.com/2020/03/20/hello-world/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;20&#x2F;hello-world&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;20&#x2F;hello-world&#x2F;</a><br>
+    <strong>本文链接：</strong><a href="http://yoursite.com/2019/03/04/%E5%8C%97%E9%82%AEOJ%2089.%20%E7%BB%9F%E8%AE%A1%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%20java%E7%89%88/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;03&#x2F;04&#x2F;%E5%8C%97%E9%82%AEOJ%2089.%20%E7%BB%9F%E8%AE%A1%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%20java%E7%89%88&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;03&#x2F;04&#x2F;%E5%8C%97%E9%82%AEOJ%2089.%20%E7%BB%9F%E8%AE%A1%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%20java%E7%89%88&#x2F;</a><br>
     
       <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
     
@@ -200,7 +232,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1584701703543"></script>-->
+<!--<script src="/js/app.js?v=1584701703553"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>

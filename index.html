@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1584699799268">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703623">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -47,7 +47,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>1</div>
+        <div><span>文章</span>26</div>
         <div><span>标签</span>0</div>
         <div><span>分类</span>0</div>
     </div>
@@ -105,7 +105,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a></li></ul>
     </div>
   </div>
 
@@ -122,6 +122,29 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/2020/03/20/newpapername/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="newpapername" class="lazyload">
+                    <h1>newpapername</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年03月20日</a>
+            <a><i class="nexmoefont icon-areachart"></i>0 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/2020/03/20/hello-world/">
@@ -159,13 +182,658 @@
         </article>
     </div>
     
+    <div class="nexmoe-post">
+        <a href="/2019/03/14/%E5%8C%97%E9%82%AEOJ-257-%20%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88-%E8%BD%AF%E4%BB%B614%20java/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="北邮OJ-257- 最近公共祖先-软件14 java" class="lazyload">
+                    <h1>北邮OJ-257- 最近公共祖先-软件14 java</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年03月14日</a>
+            <a><i class="nexmoefont icon-areachart"></i>654 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>思路分析：思路应该比较简单也很容易想的来，就是比较两个节点的最近的祖先节点，要对每个节点依次记录下他的所有祖先节点，包括其自己，因为自己也算自己的祖先节点，这一点题目中没有明确指出<br>所以比较坑。</p>
+<p>我们可以用一个数组表示某个节点的父节点是谁，在判断的时候顺着数组遍历下去就能达到根节点1，并依次记录下该节点的所有的祖先节点。再与另外一个节点的所有的祖先进行比较。</p>
+<p>Problem C. 最近公共祖先<br>题目描述<br>给出一棵有N个节点的有根树TREE（根的编号为1），对于每组查询，请输出树上节点u和v的最近公共祖先。<br>最近公共祖先：对于有向树TREE的两个结点u,v。最近公共祖先LCA（TREE u,v）表示一个节点x，满足x是u、v的祖先且x的深度尽可能大。<br>输入格式<br>输入数据第一行是一个整数T（1&lt;=T&lt;=100），表示测试数据的组数。<br>对于每组测试数据：<br>第一行是一个正整数N（1&lt;=N&lt;=100），表示树上有N个节点。<br>接下来N-1行，每行两个整数u,v(1&lt;=u,v&lt;=N)，表示节点u是v的父节点。<br>接下来一行是一个整数M（1&lt;=M&lt;=1000），表示查询的数量。<br>接下来M行，每行两个整数u,v(11&lt;=u,v&lt;=N)，表示查询节点u和节点v的最近公共祖先。<br>输出格式<br>对于每个查询，输出一个整数，表示最近公共祖先的编号，<br>输入样例<br>2<br>3<br>1 2<br>1 3<br>1<br>2 3<br>4<br>1 2<br>1 3<br>3 4<br>2<br>2 3<br>3 4<br>1<br>1<br>3  </p>
+<pre><code>package test;
+
+import java.io.BufferedInputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ZuijinZuxianMain {
+    static Scanner scan = new Scanner(new  BufferedInputStream(System.in));
+    static int tree[];
+    public static void main(String[] args) {
+        int  T = scan.nextInt();
+        for(int i = 0 ;i&lt;T;i++){
+            int N = scan.nextInt();
+         tree = new int[N+1];
+            for(int j = 1;j&lt;=N-1;j++){
+                int a = scan.nextInt();
+                int b = scan.nextInt();
+                tree[b] = a; //数组的值为其父节点
+            }
+            int M = scan.nextInt();
+            for(int k = 0;k&lt;M;k++){
+                int c = scan.nextInt();
+                int d = scan.nextInt();
+                panduan(c,d);
+            }
+        }
+    }
+    private static void panduan(int c,int d) {
+        int flagc =c,flagd=d;
+        ArrayList&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;();
+        list.add(c);
+        while(tree[flagc]!=0){
+            list.add(tree[flagc]);
+            flagc = tree[flagc];
+        }
+
+        ArrayList&lt;Integer&gt; list1 = new ArrayList&lt;Integer&gt;();
+        list1.add(d);
+        while(tree[flagd]!=0){
+            list1.add(tree[flagd]);
+            flagd = tree[flagd];
+        }
+            for(int i1=0;i1&lt;=list.size();i1++){
+                if(list1.contains(list.get(i1))){
+                    System.out.println(list.get(i1));
+                    break;
+                }
+            }
+    }
+}</code></pre>
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/03/05/%E5%8C%97%E9%82%AEoj%20104.%20912%E6%98%9F%E7%90%83%E7%9A%84%E7%A0%94%E7%A9%B6%E7%94%9F/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="北邮oj 104. 912星球的研究生" class="lazyload">
+                    <h1>北邮oj 104. 912星球的研究生</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年03月05日</a>
+            <a><i class="nexmoefont icon-areachart"></i>738 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+        </div>
+
+        <article>
+            
+                <h1 id="104-912星球的研究生"><a href="#104-912星球的研究生" class="headerlink" title="104. 912星球的研究生"></a>104. 912星球的研究生</h1><p><strong>时间限制</strong> 1000 ms <strong>内存限制</strong> 65536 KB</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>最近912星球的研究生入学了，912星球的教务处因此忙的焦头烂额，要求yzr做一个信息管理系统登陆查询研究生的考试成绩。但是yzr太弱了，你能帮帮忙么？<br>912星球的每一位研究生都有一个名字id和一份星球考研成绩，可喜的是都是自然数。<br>信息管理系统需要完成两个命令：<br>1.“Insert空格id_number空格score_number”命令，表示登陆一个名字id为id_number,分数为score_number的同学的信息。其中id和score都是自然数，分别代表一位研究生的id和成绩（中间有一个空格）。<br>2.“Find id_number”命令，表示查询一个名字id为id_number的研究生的成绩，需要输出对应的成绩</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>首先输入一个整数T，表示一共有T组数据(0&lt; T≤ 10)<br>每组数据的第一行包括一个数字n，表示这组数据一共n行，并且保证最多只有n位研究生,0&lt; n≤ 100。<br>接下来每一行都有一条命令，形式如上所述。<br>不会有两名拥有同样名字id的同学,并且保证名字id是自然数且小于等于1000，得分为自然数且小于等于10000</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>对于每一组数据中的每一条命令：</p>
+<p>Insert命令无需任何对应输出</p>
+<p>Find命令需要输出一行，形如“name:name_id空格score:score_number”,表示找到一个名字id为id_number,分数为score_number的同学的信息。如果没有找到输出“No<br>result!”。</p>
+<p>每个输出占一行，每组数据之间不用留空行</p>
+<h2 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h2><pre><code>2
+2
+Insert 0 10
+Find 0
+5
+Insert 1 1
+Find 2
+Insert 2 2
+Find 2
+Find 1</code></pre><h2 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h2><pre><code>name:0 score:10
+No result!
+name:2 score:2
+name:1 score:1</code></pre><p>这个题其实很简单，但有一个坑，在于题目说了两组数据，但并没有说数据之间是独立的，所以在每次处理一组数据的时候要初始化一次，否则答案错误。北邮的题有好多涉及到多组数据的故要知道可能各组数据是相互独立的！！</p>
+<pre><code>package test;
+
+import java.io.BufferedInputStream;
+import java.util.Scanner;
+
+public class YanjiushengMain {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(new BufferedInputStream(System.in));
+        int stus[] = new int[1006];
+        int T = Integer.parseInt(scan.nextLine());
+        int counts ;
+        String commends ;
+        String comms [] ;
+
+        for(int i=0;i&lt;1006;i++){
+            stus[i] = -10;
+        }
+        for(int i = 0;i&lt;T;i++){
+            for(int k=0;k&lt;1006;k++){
+                stus[k] = -10;
+            }
+            counts = Integer.parseInt(scan.nextLine());
+            for(int j=0;j&lt;counts;j++){
+                commends = scan.nextLine();
+                comms = commends.split(&quot; &quot;);
+                if(&quot;Insert&quot;.equals(comms[0])){
+                    int no = Integer.parseInt(comms[1]);
+                    int cj = Integer.parseInt(comms[2]);
+                    stus[no] = cj;
+                }else if(&quot;Find&quot;.equals(comms[0])){
+                    int tar = Integer.parseInt(comms[1]);
+                    if(stus[tar]!=-10){
+                        System.out.println(&quot;name:&quot;+comms[1]+&quot; score:&quot;+stus[Integer.parseInt(comms[1])]);
+                    }else{
+                        System.out.println(&quot;No result!&quot;);
+                    }
+                    }
+
+            }
+
+        }
+    }
+
+}</code></pre>
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/03/04/%E5%8C%97%E9%82%AEoj%2097.%20%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="北邮oj 97. 二叉排序树" class="lazyload">
+                    <h1>北邮oj 97. 二叉排序树</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年03月04日</a>
+            <a><i class="nexmoefont icon-areachart"></i>634 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>#</p>
+<p>#</p>
+<h1 id="97-二叉排序树"><a href="#97-二叉排序树" class="headerlink" title="97. 二叉排序树"></a>97. 二叉排序树</h1><p><strong>时间限制</strong> 1000 ms <strong>内存限制</strong> 65536 KB</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>二叉排序树，也称为二叉查找树。可以是一颗空树，也可以是一颗具有如下特性的非空二叉树：</p>
+<ol>
+<li>若左子树非空，则左子树上所有节点关键字值均不大于根节点的关键字值； </li>
+<li>若右子树非空，则右子树上所有节点关键字值均不小于根节点的关键字值； </li>
+<li>左、右子树本身也是一颗二叉排序树。 </li>
+</ol>
+<p>现在给你N个关键字值各不相同的节点，要求你按顺序插入一个初始为空树的二叉排序树中，每次插入后成功后，求相应的父亲节点的关键字值，如果没有父亲节点，则输出-1。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行，一个数字N（N&lt;=100），表示待插入的节点数。</p>
+<p>第二行，N个互不相同的正整数，表示要顺序插入节点的关键字值，这些值不超过108。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出共N行，每次插入节点后，该节点对应的父亲节点的关键字值</p>
+<h2 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h2><pre><code>5
+2 5 1 3 4</code></pre><h2 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h2><pre><code>-1
+2
+2
+5
+3</code></pre><p>不是很难的题但确实体现了北邮爱考树相关的编程题，从历年的初试题也能看得出来。</p>
+<p>用类表示节点，在节点内部定义父节点。</p>
+<p>用节点数组按输入顺序存储节点。</p>
+<p>在递归创建二叉排序树的时候，记录父节点。</p>
+<pre><code>package test;
+
+import java.io.BufferedInputStream;
+import java.util.Scanner;
+class NODE1{
+    int value;
+    NODE1 father;
+    NODE1 left;
+    NODE1 right;
+    public int getValue() {
+        return value;
+    }
+    public void setValue(int value) {
+        this.value = value;
+    }
+    public NODE1 getFather() {
+        return father;
+    }
+    public void setFather(NODE1 father) {
+        this.father = father;
+    }
+    public NODE1 getLeft() {
+        return left;
+    }
+    public void setLeft(NODE1 left) {
+        this.left = left;
+    }
+    public NODE1 getRight() {
+        return right;
+    }
+    public void setRight(NODE1 right) {
+        this.right = right;
+    }
+    public NODE1(int value, NODE1 father, NODE1 left, NODE1 right) {
+        super();
+        this.value = value;
+        this.father = father;
+        this.left = left;
+        this.right = right;
+    }
+
+}
+public class ErchashuMain {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner (new BufferedInputStream(System.in));
+        int T = scan.nextInt();
+
+        NODE1 root = new NODE1(scan.nextInt(),null, null, null);
+        NODE1 [] nodes = new NODE1[T];
+        nodes[0] = root;
+        root.father = new NODE1(-1,null, null, null);
+        for(int i=1;i&lt;T;i++){
+            nodes[i] = new NODE1(scan.nextInt(),null, null, null);
+            Insert(nodes[i],root);
+        }
+        for(int i=0;i&lt;T;i++){
+
+                System.out.println(nodes[i].father.value);
+        }
+    }
+
+    private static int Insert(NODE1 tarnode, NODE1 root) {
+        if(tarnode.value&lt;root.value){
+            if(root.left!=null){
+                Insert(tarnode,root.left);
+            }else{
+                tarnode.father = root;
+                root.left = tarnode;
+                return 1;
+            }
+
+        }
+        if(tarnode.value&gt;root.value){
+            if(root.right!=null){
+                Insert(tarnode,root.right);
+            }else{
+                tarnode.father = root;
+                root.right = tarnode;
+                return 1;
+            }
+
+        }
+        return 1;
+
+    }
+
+}</code></pre>
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/03/04/%E5%8C%97%E9%82%AEOJ%2089.%20%E7%BB%9F%E8%AE%A1%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%20java%E7%89%88/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="北邮OJ 89. 统计时间间隔 java版" class="lazyload">
+                    <h1>北邮OJ 89. 统计时间间隔 java版</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年03月04日</a>
+            <a><i class="nexmoefont icon-areachart"></i>406 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <h1 id="89-统计时间间隔"><a href="#89-统计时间间隔" class="headerlink" title="89. 统计时间间隔"></a>89. 统计时间间隔</h1><p><strong>时间限制</strong> 1000 ms <strong>内存限制</strong> 65536 KB</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给出两个时间(24小时制)，求第一个时间至少要经过多久才能到达第二个时间。给出的时间一定满足的形式，其中x和y分别代表小时和分钟。0≤x&lt;24,0≤y&lt;60。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行为数据组数T(1≤T≤50000)。<br>每组数据包括两行，分别代表两个时间</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>每组数据输出一行，表示最少经过的分钟数。</p>
+<h2 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h2><pre><code>2
+7:00
+7:00
+7:00
+8:00</code></pre><h2 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h2><pre><code>0
+60</code></pre><p>乍一想有点复杂，情况比较多。但是把两个时间都化为以0：00为开始的分钟表示时就简单多了，无非就两种情况，一个是第一个分钟数大于第二个还有第二个大于第一个。</p>
+<p>那么这就相当于一个环， 不是求优弧长度，就是求劣弧长度，劣弧长度很好求，大的减去小的即可，优弧长度要用总长度24*60减去劣弧长度。</p>
+<pre><code>package test;
+
+import java.io.BufferedInputStream;
+import java.util.Scanner;
+
+public class TimejiangeMain {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(new BufferedInputStream(System.in));
+        int T = scan.nextInt();
+        int h1,m1,h2,m2,time11,time22;
+        String time1,time2;
+        scan.nextLine();
+        int time;
+        for(int i = 0;i&lt;T ;i++){
+            time1 = scan.nextLine();
+            h1 = Integer.parseInt(time1.split(&quot;:&quot;)[0]);
+            m1 = Integer.parseInt(time1.split(&quot;:&quot;)[1]);
+            time11 = h1*60 + m1;
+            time2 = scan.nextLine();
+            h2 = Integer.parseInt(time2.split(&quot;:&quot;)[0]);
+            m2 = Integer.parseInt(time2.split(&quot;:&quot;)[1]);
+            time22 = h2*60 + m2;
+            if(time11&lt;=time22){
+                time = time22-time11;
+                System.out.println(time);
+            }else{
+                 time = 24*60-(time11-time22);
+                 System.out.println(time);
+            }
+
+        }
+    }
+
+}</code></pre>
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2018/03/27/%E7%94%A8%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E5%AE%9A%E7%90%86%E6%B1%82%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0%E5%92%8C%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="用欧几里得定理求最大公约数和最小公倍数" class="lazyload">
+                    <h1>用欧几里得定理求最大公约数和最小公倍数</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2018年03月27日</a>
+            <a><i class="nexmoefont icon-areachart"></i>179 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <p><strong>求最小公约数：</strong></p>
+<p>原理：GCD(a,b) = GCD(a,a%b) （a&gt;b）</p>
+<p>一直递归下去直到a%b=0 时返回b。</p>
+<p><strong>最大公倍数：</strong></p>
+<p>原理：最大公倍数= a*b/最小公约数</p>
+<pre><code>package demo;
+
+import java.util.Scanner;
+
+public class Main欧几里得原理最大公约数最小公倍数 {
+    /*求最大公约数的新方法：欧几里得原理
+     * GCD(a,b) = GCD(a,a%b)*/
+    static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        if(a&lt;b){
+            int tem =a;
+            a= b;
+            b=tem;
+        }
+
+        int res = ff(a,b);
+        System.out.println(res);
+        /*最大公倍数= A*B/最大公约数 */
+        System.out.println(a*b/res);
+    }
+    private static int ff(int a, int b) {
+        if(a%b==0){
+            return b;
+        }else{
+            return ff(a,a%b);
+        }
+    }
+
+}</code></pre>
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2018/03/23/1083.%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E7%9B%B8%E7%AD%89%E7%9A%84%E5%B7%AE%EF%BC%8820%EF%BC%89/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="1083.是否存在相等的差（20）" class="lazyload">
+                    <h1>1083.是否存在相等的差（20）</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2018年03月23日</a>
+            <a><i class="nexmoefont icon-areachart"></i>443 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+        </div>
+
+        <article>
+            
+                <h1 id="1083-是否存在相等的差-20"><a href="#1083-是否存在相等的差-20" class="headerlink" title="1083. 是否存在相等的差 (20)"></a>1083. 是否存在相等的差 (20)</h1><p>时间限制</p>
+<p>400 ms  </p>
+<p>内存限制</p>
+<p>65536 kB  </p>
+<p>代码长度限制</p>
+<p>8000 B  </p>
+<p>判题程序</p>
+<p>Standard</p>
+<p>作者</p>
+<p>CHEN, Yue  </p>
+<p>给定 N 张卡片，正面分别写上 1、2、……、N，然后全部翻面，洗牌，在背面分别写上 1、2、……、N。将每张牌的正反两面数字相减（大减小），得到 N<br>个非负差值，其中是否存在相等的差？</p>
+<p><strong>输入格式：</strong></p>
+<p>输入第一行给出一个正整数 N（2 &lt;= N &lt;= 10000），随后一行给出 1 到 N 的一个洗牌后的排列，第 i 个数表示正面写了 i<br>的那张卡片背面的数字。</p>
+<p><strong>输出格式：</strong></p>
+<p>按照“差值 重复次数”的格式从大到小输出重复的差值及其重复的次数，每行输出一个结果。</p>
+<p><strong>输入样例：</strong></p>
+<pre><code>8
+3 5 8 6 2 1 4 7</code></pre><p><strong>输出样例：</strong></p>
+<pre><code>5 2
+3 3
+2 2</code></pre><p>这应该是个挺简单的题，但是数据量比较大，用java担心超时，所以用c++做的 。</p>
+<p>利用一个数组去存放差值的个数，数组的下标为差值。</p>
+<p>犯了一个低级错误</p>
+<pre><code>#include&lt;iostream&gt;
+#include&lt;stdio.h&gt;
+#include&lt;sstream&gt;
+
+
+using namespace std;
+
+
+int res [10002] ;
+
+
+int main(){
+    int k;
+    cin&gt;&gt;k;
+    for(int i=1;i&lt;10002;i++){
+        res[i] = 0;
+    }/*这里的&lt;=k刚开始写的&lt;k，很烦，以后对于边界还是要谨慎再谨慎*/
+    for(int i=1;i&lt;=k;i++){
+    int tem;
+        scanf(&quot;%d&quot;,&amp;tem);
+        if(i&gt;tem){
+            res[i-tem]++ ;
+        }else if(i&lt;tem){
+            res[tem-i]++;
+        }else{
+            res[0]++;  
+        }
+
+    }
+    string ress;
+    ress=&quot;&quot;;
+    for(int i=k;i&gt;=0;i--){
+        if(res[i]&gt;1){
+        ostringstream oss;
+        oss&lt;&lt;i&lt;&lt;&quot; &quot;&lt;&lt;res[i]&lt;&lt;&quot;\n&quot;;
+        ress=ress+oss.str();
+        }
+
+    }
+    cout&lt;&lt;ress.substr(0,ress.length()-1);
+
+
+
+    return 0;
+}</code></pre>
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2018/03/23/c++%20%E7%9A%84vector%20sort%E9%81%87%E5%88%B0%E6%A0%88%E9%94%99%E8%AF%AF/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="c++ 的vector sort遇到栈错误" class="lazyload">
+                    <h1>c++ 的vector sort遇到栈错误</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2018年03月23日</a>
+            <a><i class="nexmoefont icon-areachart"></i>275 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>在做pat乙级1082 射击比赛时 遇到了sort 段错误。</p>
+<p>题目链接：<a href="https://www.patest.cn/contests/pat-b-practise/1082" target="_blank" rel="noopener">https://www.patest.cn/contests/pat-b-practise/1082</a></p>
+<p>感觉写的没啥毛病 但就是段错误 ，搜索了一下才明白，原来是sort函数在极端相等的情况下，比如比较的元素内容完全相同，sort会一直遍历下去直到<br><strong>越界。</strong></p>
+<p>*<em>![](<a href="https://img-" target="_blank" rel="noopener">https://img-</a><br>blog.csdn.net/20180323171403648?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA5NjgzNTA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)<br>*</em></p>
+<p>**<br>**</p>
+<p><strong>我原来的写法是：</strong></p>
+<p>** int compar(stu s1,stu s2){<br>return s1.juli-s2.juli;  </p>
+<p>**</p>
+<p>** }  **</p>
+<p>记得以前这样写是没问题，还是我记错了，在java中写没问题？</p>
+<p>反正  以后记住 <strong>比较器用bool返回值</strong> 就  好了额。。！！</p>
+<p>#include<iostream></p>
+<p>#include&lt;stdio.h&gt;<br>#include<algorithm><br>using namespace std;<br>#include<vector><br>#include<string><br>#include<cmath>  </p>
+<p>struct stu{<br>string bianhao;<br>int x;<br>int y;<br>int juli;  </p>
+<p>};<br>bool compar(stu s1,stu s2){<br>return s1.juli&gt;s2.juli;  </p>
+<p>}<br>int main(){<br>int k;<br>scanf(“%d”,&amp;k);<br>vector<stu> vec;<br>for(int i=0;i&lt;k;i++){<br>stu s ;<br>cin&gt;&gt;s.bianhao&gt;&gt;s.x&gt;&gt;s.y;<br>s.juli = s.x<em>s.x+s.y</em>s.y;<br>vec.push_back(s);  </p>
+<p>}<br>if(k==0){  </p>
+<p>return 0;<br>}<br>sort(vec.begin(),vec.end(),compar);  </p>
+<p>cout&lt;&lt;vec[k-1].bianhao&lt;&lt;” “&lt;&lt;vec[0].bianhao;<br>return 0;<br>}  </p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2018/02/21/%E7%AC%AC%E4%B8%83%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%A4%A7%E8%B5%9B%E4%B8%AA%E4%BA%BA%E8%B5%9B%E7%9C%81%E8%B5%9B%EF%BC%88%E8%BD%AF%E4%BB%B6%E7%B1%BB%EF%BC%893%20%E5%87%91%E7%AE%97%E5%BC%8F%20%E3%80%90%E5%85%A8%E6%8E%92%E5%88%97%E8%A7%A3%E6%B3%95%E3%80%91/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="\第七届蓝桥杯大赛个人赛省赛（软件类）3 凑算式 【全排列解法】" class="lazyload">
+                    <h1>\第七届蓝桥杯大赛个人赛省赛（软件类）3 凑算式 【全排列解法】</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月21日</a>
+            <a><i class="nexmoefont icon-areachart"></i>491 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>这个算式中A<del>I代表1</del>9的数字，不同的字母代表不同的数字。</p>
+<p>比如：<br>6+8/3+952/714 就是一种解法，<br>5+3/1+972/486 是另一种解法。<br>这个算式一共有多少种解法？  </p>
+<p>注意：你提交应该是个整数，不要填写任何多余的内容或说明性文字。</p>
+<p>看了下网上的方法，大多是用暴力枚举或者dfs回溯的，看到这个题我的第一想法就是全排列，一说全排列那自然而然就是next_permutation<br>函数了，在每次的排列情况下判断是否符合条件 ，问题解决。（这里也可以用乘法代替除法的思想来处理一下 ，避免麻烦）</p>
+<p>答案是：29</p>
+<pre><code>#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+int main(){
+    int a[10]={1,2,3,4,5,6,7,8,9};
+    ///////////A B C D E F G H I
+    int count = 0;
+    while(next_permutation(a,a+9)){
+        //A*C*G*H*I + B*G*H*I + D*E*F*C ==10*C*G*H*I
+        if(a[0]+a[1]*1.00/a[2]+(a[3]*100+a[4]*10+a[5])*1.00/(a[6]*100+a[7]*10+a[8])*1.00==10){
+            cout&lt;&lt;a[0]&lt;&lt;&quot; &quot;&lt;&lt;a[1]&lt;&lt;&quot; &quot;&lt;&lt;a[2]&lt;&lt;&quot; &quot;  &lt;&lt;a[3]&lt;&lt;&quot; &quot;  &lt;&lt;a[4]&lt;&lt;&quot; &quot;  &lt;&lt;a[5]&lt;&lt;&quot; &quot;  &lt;&lt;a[6]&lt;&lt;&quot; &quot;  &lt;&lt;a[7]&lt;&lt;&quot; &quot;&lt;&lt;a[8]&lt;&lt;&quot; &quot;  ;  
+            count ++ ;
+            cout&lt;&lt;endl;
+        }
+
+    }
+    cout&lt;&lt;count;
+    return 0;
+} </code></pre><p>java 的dfs写法：</p>
+<pre><code>package demo;
+
+public class Main凑算式 {
+    static int a[] =new int [9];
+    static boolean B []=new boolean [9];
+    static int count = 0;
+    static void cou(int cur){
+        if(cur == 9){
+            if(check()){
+                count++;
+            }
+        }else{
+            for(int i = 0;i&lt;9;i++){
+                if(B[i] == false){
+                    B[i] = true;
+                    a[cur] = i+1;
+                    cou(cur+1);
+                    B[i] = false;
+                }
+            }
+        }
+    }
+
+
+
+    private static boolean check() {
+        if(a[0]+a[1]*1.00/a[2]+(a[3]*100+a[4]*10+a[5])*1.00/(a[6]*100+a[7]*10+a[8])*1.00==10){
+            return true;
+        }
+        return false;
+    }
+
+
+
+    public static void main(String[] args) {
+            for(int i=0;i&lt;9;i++){
+                B[i] = false;
+            }
+            cou(0);
+            System.out.println(count);
+    }
+
+}</code></pre>
+            
+        </article>
+    </div>
+    
 </section>
 
+    <nav class="nexmoe-page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="nexmoefont icon-right"></i></a>
+    </nav>
+  
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1584699799269"></script>-->
+<!--<script src="/js/app.js?v=1584701703624"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>

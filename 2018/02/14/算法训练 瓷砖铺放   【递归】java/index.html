@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>Hello World - 凌乱\</title>
+  <title>算法训练 瓷砖铺放   【递归】java - 凌乱\</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,20 +12,20 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="算法训练 瓷砖铺放 时间限制：1.0s 内存限制：512.0MB 锦囊1 锦囊2 锦囊3 问题描述 有一长度为N(1&lt;&#x3D;Ｎ&lt;&#x3D;10)的地板，给定两种不同瓷砖：一种长度为1，另一种长度为2，数目不限。要将这个长度为N的地板铺满，一共有多少种不同的铺法？例如，长度为4的地面一共有如下5种铺法：4&#x3D;1+1+1+14&#x3D;2+1+14&#x3D;1+2+14&#x3D;1+1+24&#x3D;2+2编程用递归的方法求解上述问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/03/20/hello-world/index.html">
+<meta property="og:title" content="算法训练 瓷砖铺放   【递归】java">
+<meta property="og:url" content="http://yoursite.com/2018/02/14/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E7%93%B7%E7%A0%96%E9%93%BA%E6%94%BE%20%20%20%E3%80%90%E9%80%92%E5%BD%92%E3%80%91java/index.html">
 <meta property="og:site_name" content="凌乱\">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="算法训练 瓷砖铺放 时间限制：1.0s 内存限制：512.0MB 锦囊1 锦囊2 锦囊3 问题描述 有一长度为N(1&lt;&#x3D;Ｎ&lt;&#x3D;10)的地板，给定两种不同瓷砖：一种长度为1，另一种长度为2，数目不限。要将这个长度为N的地板铺满，一共有多少种不同的铺法？例如，长度为4的地面一共有如下5种铺法：4&#x3D;1+1+1+14&#x3D;2+1+14&#x3D;1+2+14&#x3D;1+1+24&#x3D;2+2编程用递归的方法求解上述问题">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-20T06:08:47.974Z">
-<meta property="article:modified_time" content="2020-03-20T06:08:47.974Z">
+<meta property="article:published_time" content="2018-02-14T14:43:46.000Z">
+<meta property="article:modified_time" content="2020-03-20T09:58:04.970Z">
 <meta property="article:author" content="Maosheng Zhang">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703540">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1584701703559">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -128,15 +128,15 @@
         <div class="nexmoe-post">
   
       <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
-          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
-          <h1>Hello World</h1>
+          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="算法训练 瓷砖铺放   【递归】java" class="lazyload">
+          <h1>算法训练 瓷砖铺放   【递归】java</h1>
       </div>
   
   
   <div class="nexmoe-post-meta" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2020年03月20日</a>
-    <a><i class="nexmoefont icon-areachart"></i>73 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2018年02月14日</a>
+    <a><i class="nexmoefont icon-areachart"></i>444 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
 </div>
 
   <div class="nexmoe-post-right">
@@ -144,20 +144,52 @@
   </div>
 
   <article>
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <p>算法训练 瓷砖铺放</p>
+<p>时间限制：1.0s 内存限制：512.0MB</p>
+<p>锦囊1</p>
+<p>锦囊2</p>
+<p>锦囊3</p>
+<p>问题描述</p>
+<p>有一长度为N(1&lt;=Ｎ&lt;=10)的地板，给定两种不同瓷砖：一种长度为1，另一种长度为2，数目不限。要将这个长度为N的地板铺满，一共有多少种不同的铺法？<br>例如，长度为4的地面一共有如下5种铺法：<br>4=1+1+1+1<br>4=2+1+1<br>4=1+2+1<br>4=1+1+2<br>4=2+2<br>编程用递归的方法求解上述问题。</p>
+<p>输入格式</p>
+<p>只有一个数N，代表地板的长度</p>
+<p>输出格式</p>
+<p>输出一个数，代表所有不同的瓷砖铺放方法的总数</p>
+<p>样例输入</p>
+<pre><code>4</code></pre><p>样例输出</p>
+<pre><code>5</code></pre><p>思路分析：</p>
+<p>一开始这个题我想用递归去往一个数组中添加一和二，看是否在某一个时刻，数组内的和为N。这个思路并没有做出来。</p>
+<p>参考了网上的代码，发现自己真的很菜。。。<br>由于这个题不需要输出组成的序列，只输出总的数目即可，所以每次递归是的变量加一或者加二，然后根据回溯法的思想，如果加上一小于等于N则调用pudiban(val+1),如果加上二小于等于N则调用pudiban(val+2),实际上不用判断val是否会超出N,因为在调用这一层函数的时候已经判断过了。</p>
+<p>代码：</p>
+<pre><code>import java.util.Scanner;
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+public class Main瓷砖铺法 {
+    static Scanner scan = new Scanner(System.in);
+    static int N;
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+    static int count = 0;
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+    public static void main(String[] args) {
+        N = scan.nextInt();
+        pudiban(0);
+        System.out.println(count);
+    }
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    private static void pudiban(int val) {
+        if (val == N) {
+            count++;
+            return;
+        }
 
+        if (val + 1 &lt;= N) {
+            pudiban(val + 1);
+        }
+        if (val + 2 &lt;= N) {
+            pudiban(val + 2);
+        }
+    }
+
+}</code></pre>
   </article>
 
   <div class="nexmoe-post-meta">
@@ -170,7 +202,7 @@
       
   <div class="nexmoe-post-copyright">
     <strong>本文作者：</strong>Maosheng Zhang<br>
-    <strong>本文链接：</strong><a href="http://yoursite.com/2020/03/20/hello-world/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;20&#x2F;hello-world&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;20&#x2F;hello-world&#x2F;</a><br>
+    <strong>本文链接：</strong><a href="http://yoursite.com/2018/02/14/%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E7%93%B7%E7%A0%96%E9%93%BA%E6%94%BE%20%20%20%E3%80%90%E9%80%92%E5%BD%92%E3%80%91java/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;02&#x2F;14&#x2F;%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E7%93%B7%E7%A0%96%E9%93%BA%E6%94%BE%20%20%20%E3%80%90%E9%80%92%E5%BD%92%E3%80%91java&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;02&#x2F;14&#x2F;%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%20%E7%93%B7%E7%A0%96%E9%93%BA%E6%94%BE%20%20%20%E3%80%90%E9%80%92%E5%BD%92%E3%80%91java&#x2F;</a><br>
     
       <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
     
@@ -200,7 +232,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1584701703543"></script>-->
+<!--<script src="/js/app.js?v=1584701703561"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
